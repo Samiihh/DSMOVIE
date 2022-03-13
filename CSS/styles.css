@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 :root {
-    --bg-gray: #ddd;
+    --bg-gray: #070707;
     --text-gray : #4a4a4a;
     --color-primary: #4d41c0;
     --white: #fff;
@@ -67,7 +67,7 @@ a, a:hover {
 
 
     #dsmovie-card-list {
-        padding: 40px 10px;
+        padding: 0 10px;
 
     }
 
@@ -94,7 +94,7 @@ a, a:hover {
     }
 
     .dsmovie-card-description h3 {
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 700;
         margin-bottom: 10px;
         text-align: center;
@@ -161,9 +161,10 @@ a, a:hover {
     }
 
     .dsmovie-form-description h3 {
-        font-size: 13px;
+        font-size: 20px;
         font-weight: 700;
         margin-bottom: 20px;
+        text-align: center;
     }
 
 
@@ -184,4 +185,57 @@ a, a:hover {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+    }
+    .dsmovie-pagination-container {
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .dsmovie-pagination-box {
+        width: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    .dsmovie-pagination-box p {
+        margin: 0;
+        font-size: 12px;
+        color: var(--color-primary);
+        font-weight: 400;
+    }
+
+    .dsmovie-pagination-box button {
+        width: 40px;
+        height: 40px;
+        border:  1px solid var(--color-primary);
+        border-radius: 4px;
+        background-color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .dsmovie-pagination-box button img {
+        filter:  invert(32%) sepia(45%) saturate(2431%) hue-rotate(227deg) brightness(76%) contrast(98%);
+    }
+    
+    .dsmovie-pagination-box button:disabled {
+        border:  1px solid var(--text-light-gray);
+    }
+
+    .dsmovie-pagination-box button:disabled img {
+        filter: unset;
+    }
+
+    .dsmovie-flip-horizontal {
+        transform: rotate(180deg);
+    }
+
+    footer {
+        text-align: center;
+        justify-content: center;
+        color: var(--text-light-gray);
     }
